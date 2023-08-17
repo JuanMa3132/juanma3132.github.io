@@ -79,5 +79,21 @@ width: 100%;
 ul {
     list-style: none;
 }
+.sobre-mi {
+    margin: 0 20px 0 20px;
+}
+.sobre-mi p {
+    text-align: justify;
+    padding: 0 5% 0 5%;
+}
+.sobre-mi h2 {
+    text-align: center;
+}
+.imagen-mia {
+    margin: 0 90px 0 90px;
+    height: 50%;
+    width: 50%;
+    border-radius: 200px;
+}
 
 
