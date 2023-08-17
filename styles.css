@@ -55,32 +55,52 @@ body {
     padding: 1%;
     border: 4px solid white;
     border-radius: 15px;
-    margin: 10px; 
+    margin: 10% 5% 0 5%; 
     font-size: 30px;
     font-family: sans-serif;
 }
 .homepage h2 {
     text-align: center;
-    margin: 0;
+    margin: 5% 0 0 0;
     color: white;
 }
 .gradient {
     background: rgb(163,20,20);
     background: linear-gradient(180deg, rgba(163,20,20,1) 41%, rgba(0,0,0,1) 96%, rgb(0, 0, 0) 100%);
-height: 30em;
+height: 25em;
 width: 100%;
 }
 .gradient2 {
+    background-image: url(stars.webp);
+    background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el div */
+    background-position: center; /* Centra la imagen en el div */
     padding: 0;
     margin: 0;
     background: rgb(0,0,0);
     background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 59%);
 }
+.gradient2::before {
+    content: ""; /* Pseudo-elemento para superponer la imagen */
+    position: absolute; /* Posicionamiento absoluto en relación con el div */
+    top: 15em;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('stars.webp'); /* Ruta a tu imagen webp */
+    background-size: cover;
+    background-position: center;
+    opacity: 0.1; /* Ajusta la opacidad de la imagen superpuesta según tus preferencias */
+}
 ul {
     list-style: none;
 }
+.star {
+    top: 25em;
+    position: absolute;
+    height: 8em;
+}
 .sobre-mi {
-    margin: 0 20px 0 20px;
+    margin: 10% 20px 0 20px;
 }
 .sobre-mi p {
     text-align: justify;
@@ -94,6 +114,19 @@ ul {
     height: 50%;
     width: 50%;
     border-radius: 200px;
+}
+
+.gradient3 {
+    background: rgb(45,253,62);
+    background: linear-gradient(0deg, rgba(45,253,62,1) 0%, rgba(0,0,0,1) 59%);
+}
+.portafolio ul {
+    background-color: rgba(0, 0, 255, 0.212);
+    color: white;
+    padding: 10% 10% 0 10%;
+    margin: 10% 0 0 0;
+    justify-content: center;
+    align-items: center;
 }
 
 
