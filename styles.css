@@ -1,0 +1,83 @@
+/*mobile section */
+body {
+    margin: 0;
+    background-size: cover;
+    padding: 0;
+    background-color: black;
+}
+.container {
+    margin: 0;
+    padding: 0; /* Agrega padding 0 para evitar espacio alrededor */
+}
+.menu-mobile{
+    font-size: 10px;
+    background-color: rgba(0, 0, 0, 0.178);
+    display: flex;
+    margin: 0;
+    padding: 0; /* Agrega padding 0 para evitar espacio alrededor */
+}
+.menu-mobile h1 {
+    font-family: sans-serif;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: white;
+    margin-left: 5px;
+}
+.menu-mobile2 {
+    background-color: rgb(3, 3, 3);
+    cursor: pointer;
+    color: white;
+    display: flex;
+    align-items: center;
+    margin-left: auto; /* Mueve el elemento hacia la derecha */
+    padding: 10px; /* Agrega padding para espacio interno */
+}
+.menu-mobile2 h3:hover {
+    color: aqua;
+}
+.menu-mobile2 h2:hover {
+    color: aqua;
+}
+.menu-mobile2 h4:hover {
+    color: aqua;
+}
+.menu-mobile2 h3, h4 {
+    font-size: 13px;
+    align-items: center;
+    margin-left: 8px;
+}
+/*Segunda seccion*/
+
+.homepage {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 1%;
+    border: 4px solid white;
+    border-radius: 15px;
+    margin: 10px; 
+    font-size: 30px;
+    font-family: sans-serif;
+}
+.homepage h2 {
+    text-align: center;
+    margin: 0;
+    color: white;
+}
+.gradient {
+    background: rgb(163,20,20);
+    background: linear-gradient(180deg, rgba(163,20,20,1) 41%, rgba(0,0,0,1) 96%, rgb(0, 0, 0) 100%);
+height: 30em;
+width: 100%;
+}
+.gradient2 {
+    padding: 0;
+    margin: 0;
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 59%);
+}
+ul {
+    list-style: none;
+}
+
+
