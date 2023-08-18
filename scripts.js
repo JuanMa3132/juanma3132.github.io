@@ -34,3 +34,16 @@ const mobileMenu = document.querySelector('.mobile-menu');
 menuToggle.addEventListener('click', () => {
     mobileMenu.classList.toggle('active'); // Alternar la clase 'active' para mostrar u ocultar el menú
 });
+
+const gradient2 = document.querySelector('.gradient2');
+const moon = document.querySelector('.moon');
+
+window.addEventListener('resize', () => {
+  const maxWidth = gradient2.offsetWidth * 0.8; // Define el límite de movimiento hacia la derecha (80% del contenedor)
+  const newRight = Math.min(maxWidth, window.innerWidth - gradient2.getBoundingClientRect().right);
+  moon.style.right = `${newRight}px`;
+});
+
+// Ejecuta el evento de redimensionamiento una vez al cargar la página
+window.dispatchEvent(new Event('resize'));
+
