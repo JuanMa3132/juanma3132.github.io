@@ -190,11 +190,13 @@ ul {
     z-index: 2;
 }
 .Stars {
+    user-select: none;
     width: 100%;
     height: 100%;
     position: absolute;
     top: 2px;
     z-index: 1;
+    opacity:0.4;
 }
 .imagen-mia {
     margin: 0 90px 0 90px;
@@ -250,7 +252,7 @@ ul {
     z-index: 2;
 }
 .montains {
-
+    user-select: none;
     margin: 0 auto;
     padding: 0;
 }
