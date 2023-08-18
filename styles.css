@@ -142,14 +142,33 @@ ul {
     padding: 10%;
 }
 .gradient3 {
+    position: relative;
     box-shadow: 0 0 5em rgba(1, 252, 239, 0.308);
     background: rgb(0,0,0);
     background: linear-gradient(180deg, rgba(0, 0, 255, 0.144) 32%, rgb(34, 192, 195) 100%);
+}
+.experiencia ul {
+    color: white;
+    border-radius: 5%;
+    background-color: rgba(0, 0, 0, 0.534);
+    padding: 15px;
+    margin: 0;
+}
+.experiencia {
+    background-image: url(/Resource/clouds.png);
+    background-position: center top; /* Posición original */
+    background-size: cover;
+    position: relative;
+    z-index: 1;
 }
 .experiencia h2 {
     padding: 10%;
     color: white;
     justify-content: center;
+}
+.experiencia {
+    position: relative;
+    z-index: 2;
 }
 
 
