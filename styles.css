@@ -148,9 +148,6 @@ width: 100%;
 ul {
     list-style: none;
 }
-.sobre-mi {
-    margin: 10% 20px 0 20px;
-}
 .sobre-mi p {
     font-size: 20px;
     display: flex;
@@ -189,7 +186,8 @@ ul {
 }
 .gradiant5 {
     background: rgb(36,134,233);
-    background: linear-gradient(180deg, rgba(36,134,233,1) 0%, rgb(39 128 191) 44%, rgba(84,100,118,1) 49%, rgba(103,87,73,1) 59%, rgba(118,76,36,1) 63%);
+    background: linear-gradient(180deg, rgba(36,134,233,1) 0%, rgb(39 128 191) 44%, rgb(114 95 50) 49%, rgb(112 77 46) 59%, rgba(118,76,36,1) 63%);
+
 }
 .experiencia ul {
     color: white;
