@@ -170,8 +170,23 @@ html {
     position: relative;
     z-index: 2;
 }
-
+@keyframes moonMovement {
+    0% {
+      transform: translateX(0) translateY(0);
+    }
+    50% {
+      transform: translateX(50px) translateY(-50px) translateZ(100px);
+    }
+    100% {
+      transform: translateX(150px) translateY(50);
+    }
+  }
+  
+  .moon {
+    animation: moonMovement 5s infinite;
+  }
 .moon {
+    transition: right 15s ease;
     overflow: hidden;
     right: 17em;
     position: absolute;

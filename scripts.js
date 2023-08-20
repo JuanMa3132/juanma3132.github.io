@@ -1,49 +1,52 @@
+// Seleccionar el botón de alternar menú
 const menuToggle = document.querySelector('.menu-toggle');
+
+// Guardar la última posición de desplazamiento
 let lastScrollPosition = 0;
 
-window.addEventListener('scroll', () => {
-    const currentScrollPosition = window.pageYOffset;
+// Seleccionar el botón de menú
+const ham = menuToggle;
 
-    if (currentScrollPosition > lastScrollPosition) {
-        menuToggle.style.opacity = '0'; // Si el usuario hace scroll hacia abajo, ocultar el botón
-    } else {
-        menuToggle.style.opacity = '1'; // Si el usuario hace scroll hacia arriba, mostrar el botón
-    }
+// Seleccionar el botón de desplazamiento hacia arriba
+const scrollToTop = document.querySelector('.scroll-to-top');
 
-    lastScrollPosition = currentScrollPosition;
+scrollToTop.addEventListener('click', () => {
+    // Desplazarse hacia arriba de manera suave
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
 });
-
-const ham = document.querySelector ('.menu-toggle')
+// Evento de clic en el botón de menú
 ham.addEventListener('click', () => {
+    // Desplazarse hacia arriba de manera suave
     window.scrollTo({
         top: 0,
         behavior: 'smooth'
     });
 });
 
-window.addEventListener('scroll', () => {
-    if (window.scrollY > 300) {
-        scrollToTop.style.display = 'block';
-    } else {
-        scrollToTop.style.display = 'none';
-    }
-});
-
+// Seleccionar el menú móvil
 const mobileMenu = document.querySelector('.mobile-menu');
 
+// Evento de clic en el botón de alternar menú
 menuToggle.addEventListener('click', () => {
-    mobileMenu.classList.toggle('active'); // Alternar la clase 'active' para mostrar u ocultar el menú
+    // Alternar la clase 'active' para mostrar u ocultar el menú
+    mobileMenu.classList.toggle('active');
 });
 
+// Seleccionar los elementos de gradiente y luna
 const gradient2 = document.querySelector('.gradient2');
 const moon = document.querySelector('.moon');
 
+// Evento de redimensionamiento de la ventana
 window.addEventListener('resize', () => {
-  const maxWidth = gradient2.offsetWidth * 0.8; // Define el límite de movimiento hacia la derecha (80% del contenedor)
-  const newRight = Math.min(maxWidth, window.innerWidth - gradient2.getBoundingClientRect().right);
-  moon.style.right = `${newRight}px`;
+    // Definir el límite de movimiento hacia la derecha
+    const maxWidth = gradient2.offsetWidth * 0.8;
+
+    // Calcular la nueva posición de la luna
+    const newRight = Math.min(maxWidth, window.innerWidth - gradient2.getBoundingClientRect().right);
+
+    // Actualizar la posición de la luna
+    moon.style.right = `${newRight}px`;
 });
-
-// Ejecuta el evento de redimensionamiento una vez al cargar la página
-window.dispatchEvent(new Event('resize'));
-
